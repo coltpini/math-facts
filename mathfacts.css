@@ -75,6 +75,8 @@ body, html {
     width: 80vw;
     text-align: center;
     font-size: 1.4em;
+    background: #eee;
+    z-index: 100;
 }
 #score em {
     font-size: 1.5em;
