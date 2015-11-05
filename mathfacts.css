@@ -1,0 +1,104 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'open sans', 'helvetica neue', helvetica, arial, sans;
+    font-weight: 300;
+}
+* {
+    box-sizing: border-box;
+}
+#factsSelect {
+    margin: 0 0 40px 0;
+}
+#clock {
+    font-size: 4em;
+    margin: 40px 0;
+    display: block;
+}
+
+#factsSelect span {
+    display: inline-block;
+    padding: 12px 0;
+    margin: 0.5vw;
+    text-align: center;
+    width: 4vw;
+    background: #69f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#factsSelect span:hover {
+    background: #7af;
+}
+#factsSelect span.active {
+    background: #8cf;
+}
+.controls {
+    width: 20vw;
+    background: #aaa;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    overflow: auto;
+}
+#fact {
+    display: block;
+    margin-left: 20vw;
+    font-size: 8em;
+    text-align: center;
+}
+#fact input.answer {
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    display: inline-block;
+    background: #69f;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 1.5em;
+    outline: none;
+    cursor: pointer;
+}
+#fact input.answer:hover {
+    background: #7af;
+}
+
+#fact input.answer:disabled {
+    background: #eee;
+}
+
+#score {
+    position: fixed;
+    bottom: 0;
+    left: 20vw;
+    width: 80vw;
+    text-align: center;
+    font-size: 1.4em;
+}
+#score em {
+    font-size: 1.5em;
+}
+#score span {
+    padding: 0 0.6em;
+}
+
+.wrong em.warning{
+    color: #f69;
+}
+
+#starter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-top: 0.5em;
+    font-size: 4em;
+    display: inline-block;
+    background: #69f;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 20vw;
+    outline: none;
+    cursor: pointer;
+}

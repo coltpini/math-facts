@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Math Facts</title>
+        <link rel="stylesheet" href="mathfacts.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <section class="controls">
+            <section id="factsSelect"></section>
+            <span>1 min</span>
+            <input id="time" type="range" value="1" max="5" min="1" step="1" />
+            <span>5 min</span>
+            <input id="starter" type="button" value="start" />
+            <div>
+                <span id="clock">1:00</span>
+            </div>
+            <section id="score">
+                <span class="count">Count:  <em>0</em></span>
+                <span class="correct">Correct: <em>0</em></span>
+                <span class="wrong">Wrong: <em>0</em></span>
+            </section>
+        </section>
+
+        <section id="fact">
+            <div>
+                <span id="first">_</span> + <span id="second">1</span>
+            </div>
+            <div>
+                <input class="answer" disabled="true" type="button" id="answer1" value="_" />
+                <input class="answer" disabled="true" type="button" id="answer2" value="_" />
+                <input class="answer" disabled="true" type="button" id="answer3" value="_" />
+            </div>
+        </section>
+
+        <script src="mathfacts.js"></script>
+    </body>
+</html>
