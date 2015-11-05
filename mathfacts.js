@@ -107,11 +107,16 @@ var factsSelect = document.querySelector('#factsSelect'),
         });
     },
     pauseAll = function(){
+        gameGoing = false;
         whileAnswers(function(index, elem){
             elem.value = '_';
             elem.disabled = true;
         });
         clock.innerHTML = time.value + ":00";
+        starter.value = "start";
+
+        time.disabled = false;
+        randElem.innerHTML = '_';
     },
     clearAll = function(){
 
@@ -119,7 +124,7 @@ var factsSelect = document.querySelector('#factsSelect'),
 
         wrongElem.classList.remove('warning');
 
-        randElem.innerHTML = '_';
+
         count = 0;
         countElem.innerHTML = count;
 
